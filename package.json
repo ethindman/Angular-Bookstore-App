@@ -3,9 +3,6 @@
   "version": "0.1.0",
   "private": false,
   "description": "Advanced build of bookstore app using Full Mean without socket.io",
-  "scripts": {
-    "start": "node server"
-  },
   "dependencies": {
     "express": "~4.12.3",
     "mongoose": "4.0.1",
