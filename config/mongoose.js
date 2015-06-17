@@ -2,7 +2,7 @@ var mongoose = require('mongoose');
 var fs = require('fs');
 var path = require('path');
 
-mongoose.connect('mongodb://localhost/bookstore_app');
+mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost/bookstore_app');
 
 // path to files in models folder
 var models_path = path.join(__dirname, './../server/models');

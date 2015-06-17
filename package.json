@@ -13,7 +13,8 @@
   },
   "main": "server.js",
   "engines": {
-    "node": "0.12.2"
+    "node": "0.12.2",
+    "npm": "2.7.4"
   },
   "devDependencies": {
     "express": "~4.12.3",
