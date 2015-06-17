@@ -1,0 +1,31 @@
+<div class="container">
+	<div class="row">
+		<div class="col-md-12 booklist">
+			<table class="table table-bordered">
+	      <thead>
+	        <tr>
+	          <th>Title</th>
+	          <th>Author</th>
+	          <th>Description</th>
+	          <th>Edit</th>
+	        </tr>
+	      </thead>
+	      <tbody>
+     			<tr ng-repeat="book in books">
+	          <td>
+	          	<a href="#/book/{{book._id}}">
+	  						{{book.title}}
+	          	</a>
+	          </td>
+	          <td>{{book.author}}</td>
+	          <td>{{book.description}}</td>
+	          <td>
+							<a href="#/book/{{book._id}}/edit/"><button class="btn btn-primary btn-block" id="btn-edit">Edit</button></a>      
+							<button class="btn btn-danger btn-block" id="btn-destroy" ng-click="removeBook(book)">Remove</button>
+	          </td>
+	        </tr>
+	      </tbody>
+	    </table>
+		</div>
+	</div>
+</div>

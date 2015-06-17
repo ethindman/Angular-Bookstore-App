@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Mongoose Books</title>
+	<!-- Bootswatch: Flatly -->
+	<link rel="stylesheet" href="stylesheets/bootstrap.min.css"/>
+	<!-- Custom styles -->
+	<link rel="stylesheet" href="stylesheets/style.css">
+</head>
+<body ng-app='bookApp'>
+	<!-- Static NavBar -->
+	<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#/">Mongoose Books</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <div class="navbar-form navbar-right">
+          <a href="#/create/book">
+          	<button type="submit" class="btn btn-success">Add New Book</button>
+          </a>
+        </div>
+      </div><!--/.navbar-collapse -->
+    </div>
+  </nav>	
+	
+	<div ng-view></div>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular-route.min.js"></script>
+  <script src="/js/app.js"></script>
+	<script src="/js/factories/BookFactory.js"></script>
+	<script src="/js/controllers/books.js"></script>
+	<script src="/js/controllers/book-add.js"></script>
+	<script src="/js/controllers/book-view.js"></script>
+	<script src="/js/controllers/book-edit.js"></script>
+</body>
+</html>
